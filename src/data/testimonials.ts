@@ -8,6 +8,7 @@ export const testimonials: Testimonial[] = [
       "Working directly with Lemuel and William transformed our tuition enrollment. The parent booking system filled our autumn cohort in two weeks without a single tech hitch.",
     author: "Director of Admissions",
     company: "Thornton Heath ASC",
+    projectSlug: "thornton-heath-after-school-club",
     location: "London, UK",
   },
   {
@@ -15,6 +16,7 @@ export const testimonials: Testimonial[] = [
       "LewiSoft brought an international standard of design to our luxury property developments in Accra. Diaspora investors frequently compliment the fluidity and architectural clarity of our site.",
     author: "Managing Partner",
     company: "Nyonaah Developers",
+    projectSlug: "nyonaah-developers",
     location: "Accra, Ghana",
   },
   {
@@ -22,6 +24,7 @@ export const testimonials: Testimonial[] = [
       "Fast communication, zero fluff, and exceptional technical depth. They delivered our cross-border corporate site ahead of schedule and handled complex bilingual content effortlessly.",
     author: "Executive Chairman",
     company: "Menes Konsult Global",
+    projectSlug: "menes-konsult-global",
     location: "Cross-Border",
   },
 ];

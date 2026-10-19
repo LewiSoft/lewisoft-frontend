@@ -18,6 +18,12 @@ export const team: TeamMember[] = [
       "UI/UX Design",
       "Figma",
     ],
+    specializations: [
+      "Design systems engineering",
+      "Micro-interactions",
+      "Web performance & Core Web Vitals",
+      "Headless storefronts",
+    ],
     image: "/images/team/lemuel.jpg",
   },
   {
@@ -33,6 +39,12 @@ export const team: TeamMember[] = [
       "REST / GraphQL",
       "Redis",
       "AWS / Docker",
+    ],
+    specializations: [
+      "Relational schema architecture",
+      "Multi-tenant auth security",
+      "High-concurrency caching",
+      "International payment orchestration",
     ],
     image: "/images/team/william.jpg",
   },
