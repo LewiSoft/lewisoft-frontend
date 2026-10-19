@@ -1,0 +1,179 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* Fonts are loaded with next/font in src/app/layout.tsx */
+  --font-sans: var(--font-plus-jakarta-sans);
+  --font-heading: var(--font-space-grotesk);
+  --font-mono: var(--font-jetbrains-mono);
+
+  /* LewiSoft brand tokens: `bg-ink`, `text-ink-foreground`, etc. */
+  --color-ink: var(--ink);
+  --color-ink-foreground: var(--ink-foreground);
+  /* Accent hues from the Stitch palette: `text-brand-sky`, `from-brand-teal`, etc. */
+  --color-brand-sky: var(--brand-sky);
+  --color-brand-teal: var(--brand-teal);
+  --color-brand-blue: var(--brand-blue);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/* ==========================================================================
+   🎨 LEWISOFT THEME COLOURS: from the Stitch "LewiSoft Studio" design system
+   --------------------------------------------------------------------------
+   The Stitch design is dark-first (`.dark` below maps its palette 1:1):
+     • Surface        #0f131d   → background
+     • Surface low    #171b26   → card
+     • Surface lowest #0a0e18   → ink (bands, footer)
+     • Cyan           #00f2fe   → primary (buttons, links, focus rings)
+     • Sky / Teal     #89ceff / #71f8e4 → brand-sky / brand-teal accents
+   :root is a light counterpart using the deeper tones of the same hues.
+   Every shadcn component reads from these variables.
+   ========================================================================== */
+:root {
+  /* Brand */
+  --ink: #0a0e18;
+  --ink-foreground: #dfe2f1;
+  --brand-sky: #00658f;
+  --brand-teal: #006b5f;
+  --brand-blue: #0083bb;
+
+  --background: #f6f8fc;
+  --foreground: #0f131d;
+  --card: #ffffff;
+  --card-foreground: #0f131d;
+  --popover: #ffffff;
+  --popover-foreground: #0f131d;
+  --primary: #00696f;
+  --primary-foreground: #ffffff;
+  --secondary: #e6ebf2;
+  --secondary-foreground: #0f131d;
+  --muted: #eef1f6;
+  --muted-foreground: #4a5759;
+  --accent: #dff6f7;
+  --accent-foreground: #0f131d;
+  --destructive: #ba1a1a;
+  --border: #d9dee6;
+  --input: #cfd5de;
+  --ring: #00696f;
+  --chart-1: #00696f;
+  --chart-2: #00658f;
+  --chart-3: #006b5f;
+  --chart-4: #0083bb;
+  --chart-5: #4a5759;
+  --radius: 0.5rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #0f131d;
+  --sidebar-primary: #00696f;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #dff6f7;
+  --sidebar-accent-foreground: #0f131d;
+  --sidebar-border: #d9dee6;
+  --sidebar-ring: #00696f;
+}
+
+.dark {
+  /* Brand */
+  --ink: #0a0e18;
+  --ink-foreground: #dfe2f1;
+  --brand-sky: #89ceff;
+  --brand-teal: #71f8e4;
+  --brand-blue: #00a2e6;
+
+  --background: #0f131d;
+  --foreground: #dfe2f1;
+  --card: #171b26;
+  --card-foreground: #dfe2f1;
+  --popover: #1c1f2a;
+  --popover-foreground: #dfe2f1;
+  --primary: #00f2fe;
+  --primary-foreground: #002022;
+  --secondary: #262a35;
+  --secondary-foreground: #dfe2f1;
+  --muted: #1c1f2a;
+  --muted-foreground: #b9cacb;
+  --accent: #262a35;
+  --accent-foreground: #dfe2f1;
+  --destructive: #ffb4ab;
+  --border: oklch(1 0 0 / 8%);
+  --input: #3a494b;
+  --ring: #00dce6;
+  --chart-1: #00f2fe;
+  --chart-2: #89ceff;
+  --chart-3: #71f8e4;
+  --chart-4: #00a2e6;
+  --chart-5: #b9cacb;
+  --sidebar: #171b26;
+  --sidebar-foreground: #dfe2f1;
+  --sidebar-primary: #00f2fe;
+  --sidebar-primary-foreground: #002022;
+  --sidebar-accent: #262a35;
+  --sidebar-accent-foreground: #dfe2f1;
+  --sidebar-border: oklch(1 0 0 / 8%);
+  --sidebar-ring: #00dce6;
+}
+/* ============================ END THEME COLOURS ============================ */
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  html {
+    @apply font-sans;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+}
