@@ -1,17 +1,39 @@
 import type { TeamMember } from "@/types";
 
-// TODO: add full names, bios and photos (public/images/team/).
+// Bios from the Stitch homepage design.
+// TODO: add full names and photos (public/images/team/). Until a photo exists
+// the homepage shows initials instead.
 export const team: TeamMember[] = [
   {
     name: "Lemuel",
-    role: "Co-founder · Frontend Developer",
-    bio: "Designs and builds the interfaces our clients' users see and touch.",
+    role: "Frontend & UI/UX Lead",
+    bio: "Specializing in React, Next.js, TypeScript, and modern CSS architectures. Lemuel crafts fluid, pixel-precise interfaces that load instantly, feel natural on touchscreens, and convert visitors into loyal customers.",
+    location: "Accra",
+    timezone: "UTC+0",
+    stack: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "UI/UX Design",
+      "Figma",
+    ],
     image: "/images/team/lemuel.jpg",
   },
   {
     name: "William",
-    role: "Co-founder · Backend Developer",
-    bio: "Builds the APIs, databases and infrastructure that power our projects.",
+    role: "Backend & Systems Lead",
+    bio: "Architecting resilient APIs, distributed database schemas, authentication systems, and cloud infrastructure. William ensures LewiSoft platforms run securely, scale smoothly, and handle mission-critical transactional loads.",
+    location: "London",
+    timezone: "UTC+0 / BST",
+    stack: [
+      "Node.js",
+      "Python",
+      "PostgreSQL",
+      "REST / GraphQL",
+      "Redis",
+      "AWS / Docker",
+    ],
     image: "/images/team/william.jpg",
   },
 ];
