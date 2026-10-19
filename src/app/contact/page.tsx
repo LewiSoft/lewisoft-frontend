@@ -12,7 +12,7 @@ import type { Faq } from "@/types";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Start a project with LewiSoft. Tell us about your goals and timeline, and Lemuel & William will reply directly.",
+    "Start a project with LeWiSoft. Tell us about your goals and timeline, and Lemuel & William will reply directly.",
 };
 
 const reassurances: Faq[] = [

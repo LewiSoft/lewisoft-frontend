@@ -12,7 +12,7 @@ export function Testimonials() {
         <SectionHeading
           align="center"
           eyebrow="Endorsements"
-          title="What founders and directors say about LewiSoft."
+          title="What founders and directors say about LeWiSoft."
         />
         <ul className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {testimonials.map((testimonial) => (

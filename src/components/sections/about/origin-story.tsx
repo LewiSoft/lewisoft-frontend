@@ -38,7 +38,7 @@ export function OriginStory() {
                 design with the server architect directly, no intent gets lost.”
               </blockquote>
               <figcaption className="mt-2 font-mono text-[11px] tracking-wider text-muted-foreground uppercase">
-                — The LewiSoft approach
+                — The LeWiSoft approach
               </figcaption>
             </div>
           </figure>

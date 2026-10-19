@@ -13,7 +13,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "LewiSoft brought an international standard of design to our luxury property developments in Accra. Diaspora investors frequently compliment the fluidity and architectural clarity of our site.",
+      "LeWiSoft brought an international standard of design to our luxury property developments in Accra. Diaspora investors frequently compliment the fluidity and architectural clarity of our site.",
     author: "Managing Partner",
     company: "Nyonaah Developers",
     projectSlug: "nyonaah-developers",

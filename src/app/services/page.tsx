@@ -18,7 +18,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Websites, web applications, UI/UX design, backend APIs, e-commerce and ongoing maintenance from LewiSoft, with transparent scopes and pricing.",
+    "Websites, web applications, UI/UX design, backend APIs, e-commerce and ongoing maintenance from LeWiSoft, with transparent scopes and pricing.",
 };
 
 export default function ServicesPage() {

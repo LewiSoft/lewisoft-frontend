@@ -29,7 +29,7 @@ export const team: TeamMember[] = [
   {
     name: "William",
     role: "Backend & Systems Lead",
-    bio: "Architecting resilient APIs, distributed database schemas, authentication systems, and cloud infrastructure. William ensures LewiSoft platforms run securely, scale smoothly, and handle mission-critical transactional loads.",
+    bio: "Architecting resilient APIs, distributed database schemas, authentication systems, and cloud infrastructure. William ensures LeWiSoft platforms run securely, scale smoothly, and handle mission-critical transactional loads.",
     location: "London",
     timezone: "UTC+0 / BST",
     stack: [
