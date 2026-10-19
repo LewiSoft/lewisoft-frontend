@@ -1,4 +1,4 @@
-import type { Project } from "@/types";
+import type { Project, ProjectCategory } from "@/types";
 
 // Summaries and stacks come from the Stitch homepage design.
 // TODO: confirm each summary and stack is accurate, and replace the preview
@@ -9,6 +9,8 @@ export const projects: Project[] = [
     slug: "thornton-heath-after-school-club",
     name: "Thornton Heath After School Club",
     shortName: "Thornton Heath ASC",
+    tagline: "Booking & Parent Platform",
+    category: "education",
     industry: "Education",
     country: "UK",
     summary:
@@ -22,6 +24,8 @@ export const projects: Project[] = [
     slug: "dagenham-after-school-club",
     name: "Dagenham After School Club",
     shortName: "Dagenham ASC",
+    tagline: "Tutoring & Enrolment Platform",
+    category: "education",
     industry: "Education / STEM",
     country: "UK",
     summary:
@@ -35,6 +39,8 @@ export const projects: Project[] = [
     slug: "nyonaah-developers",
     name: "Nyonaah Developers",
     shortName: "Nyonaah Developers",
+    tagline: "Luxury Property Showcase",
+    category: "real-estate",
     industry: "Real Estate",
     country: "Ghana",
     summary:
@@ -48,6 +54,8 @@ export const projects: Project[] = [
     slug: "menes-konsult-global",
     name: "Menes Konsult Global",
     shortName: "Menes Konsult",
+    tagline: "Strategic Advisory Hub",
+    category: "consulting",
     industry: "Consulting",
     country: "USA",
     summary:
@@ -61,6 +69,8 @@ export const projects: Project[] = [
     slug: "epcfworld",
     name: "EPCFWorld",
     shortName: "EPCFWorld",
+    tagline: "Investment Deal-Sourcing Platform",
+    category: "fintech",
     industry: "Fintech",
     country: "Nigeria",
     summary:
@@ -74,6 +84,8 @@ export const projects: Project[] = [
     slug: "ashesi-fde-market-day-2024",
     name: "Ashesi FDE Market Day 2024",
     shortName: "Ashesi FDE",
+    tagline: "Live Event & Voting Hub",
+    category: "events",
     industry: "Events / Tech",
     country: "Ghana",
     summary:
@@ -85,6 +97,42 @@ export const projects: Project[] = [
   },
 ];
 
+export const projectCategories: Record<
+  ProjectCategory,
+  { label: string; description: string }
+> = {
+  education: {
+    label: "Education",
+    description: "Educational platforms & systems",
+  },
+  "real-estate": {
+    label: "Real Estate",
+    description: "PropTech & real estate platforms",
+  },
+  consulting: {
+    label: "Consulting",
+    description: "Global advisory & enterprise web",
+  },
+  fintech: {
+    label: "Fintech",
+    description: "Financial technology & investment portals",
+  },
+  events: {
+    label: "Events",
+    description: "Live events & real-time systems",
+  },
+};
+
 export function getProjectBySlug(slug: string): Project | undefined {
   return projects.find((project) => project.slug === slug);
+}
+
+/** The projects either side of `slug`, wrapping around at the ends. */
+export function getAdjacentProjects(slug: string) {
+  const index = projects.findIndex((project) => project.slug === slug);
+  const count = projects.length;
+  return {
+    previous: projects[(index - 1 + count) % count],
+    next: projects[(index + 1) % count],
+  };
 }

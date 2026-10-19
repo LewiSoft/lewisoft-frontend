@@ -22,21 +22,31 @@ const accents = [
   },
 ] as const;
 
-export function Team() {
+type TeamProps = {
+  eyebrow?: string;
+  title?: string;
+  aside?: string;
+  /** Show each founder's specialisations (used on the About page). */
+  detailed?: boolean;
+};
+
+export function Team({
+  eyebrow = "Meet the Founders",
+  title = "Senior engineers. No project managers or account executives.",
+  aside = "When you commission LewiSoft, your project is planned, architected, designed, and coded exclusively by William and Lemuel.",
+  detailed = false,
+}: TeamProps) {
   return (
     <section id="about" className="scroll-mt-20 py-16">
       <Container>
-        <SectionHeading
-          eyebrow="Meet the Founders"
-          title="Senior engineers. No project managers or account executives."
-          aside="When you commission LewiSoft, your project is planned, architected, designed, and coded exclusively by William and Lemuel."
-        />
+        <SectionHeading eyebrow={eyebrow} title={title} aside={aside} />
         <ul className="grid grid-cols-1 gap-10 lg:grid-cols-2">
           {team.map((member, index) => (
             <li key={member.name} className="flex">
               <FounderCard
                 member={member}
                 accent={accents[index % accents.length]}
+                detailed={detailed}
               />
             </li>
           ))}
@@ -49,9 +59,11 @@ export function Team() {
 function FounderCard({
   member,
   accent,
+  detailed,
 }: {
   member: TeamMember;
   accent: (typeof accents)[number];
+  detailed: boolean;
 }) {
   return (
     <article className="flex w-full flex-col items-start gap-6 rounded-2xl bg-card p-8 shadow-xl md:flex-row">
@@ -106,6 +118,14 @@ function FounderCard({
             {member.bio}
           </p>
         </div>
+        {detailed && (
+          <div>
+            <p className="mb-2 font-mono text-[11px] tracking-wider text-muted-foreground uppercase">
+              Specialisations
+            </p>
+            <p className="text-sm">{member.specializations.join(" • ")}</p>
+          </div>
+        )}
         <div>
           <p className="mb-2 font-mono text-[11px] tracking-wider text-muted-foreground uppercase">
             Core Tech Stack

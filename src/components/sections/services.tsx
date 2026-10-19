@@ -15,7 +15,7 @@ import type { Service, ServiceIcon } from "@/types";
 
 import { SectionHeading } from "./section-heading";
 
-const icons: Record<ServiceIcon, LucideIcon> = {
+export const serviceIcons: Record<ServiceIcon, LucideIcon> = {
   website: LayoutTemplate,
   platform: LayoutDashboard,
   design: PencilRuler,
@@ -65,7 +65,7 @@ function ServiceCard({
   number: number;
   accent: (typeof accents)[number];
 }) {
-  const Icon = icons[service.icon];
+  const Icon = serviceIcons[service.icon];
 
   return (
     <article className="group flex w-full flex-col justify-between rounded-xl bg-card p-6 shadow-md transition-all hover:bg-muted hover:shadow-xl">
