@@ -12,7 +12,7 @@ export const caseStudies: CaseStudy[] = [
       trail: "for Luxury Real Estate in Accra.",
     },
     intro:
-      "How LewiSoft designed and built an ultra-fast, bespoke property showcase platform that captured diaspora buyers across London and New York, simplifying off-plan investor acquisitions in Cantonments and Airport Residential.",
+      "How LeWiSoft designed and built an ultra-fast, bespoke property showcase platform that captured diaspora buyers across London and New York, simplifying off-plan investor acquisitions in Cantonments and Airport Residential.",
     facts: [
       {
         label: "Client",
@@ -35,7 +35,7 @@ export const caseStudies: CaseStudy[] = [
         detail: "Design to launch",
       },
       {
-        label: "LewiSoft Role",
+        label: "LeWiSoft Role",
         value: "Full-Stack Delivery",
         detail: "Lemuel & William",
       },

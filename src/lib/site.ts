@@ -1,9 +1,9 @@
 import type { NavItem } from "@/types";
 
 export const siteConfig = {
-  name: "LewiSoft",
+  name: "LeWiSoft",
   description:
-    "LewiSoft is a two-person web development studio building fast, modern websites and web apps for businesses, schools and organisations.",
+    "LeWiSoft is a two-person web development studio building fast, modern websites and web apps for businesses, schools and organisations.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   apiUrl: process.env.NEXT_PUBLIC_API_URL ?? "",
 };

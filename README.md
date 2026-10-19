@@ -1,8 +1,8 @@
 # lewisoft-frontend
 
-Frontend for the LewiSoft studio website: portfolio, services and contact pages, built with Next.js, TypeScript and Tailwind CSS. The public face of LewiSoft: a fast, responsive portfolio and marketing site showcasing our web projects. LewiSoft website frontend: UI, pages and components for our portfolio, case studies and project enquiries.
+Frontend for the LeWiSoft studio website: portfolio, services and contact pages, built with Next.js, TypeScript and Tailwind CSS. The public face of LeWiSoft: a fast, responsive portfolio and marketing site showcasing our web projects. LeWiSoft website frontend: UI, pages and components for our portfolio, case studies and project enquiries.
 
-LewiSoft is a two-person web development studio: **Lemuel** (frontend) and **William** (backend). The backend API lives in a separate repository.
+LeWiSoft is a two-person web development studio: **Lemuel** (frontend) and **William** (backend). The backend API lives in a separate repository.
 
 ## Tech stack
 
@@ -115,10 +115,10 @@ Copy `.env.example` to `.env.local` and fill in:
 | Variable               | Description                                                                         | Example                    |
 | ---------------------- | ----------------------------------------------------------------------------------- | -------------------------- |
 | `NEXT_PUBLIC_SITE_URL` | Public URL of this site (no trailing slash). Used for metadata, sitemap and robots. | `https://lewisoft.example` |
-| `NEXT_PUBLIC_API_URL`  | Base URL of the LewiSoft backend API (separate repo).                               | `http://localhost:8000`    |
+| `NEXT_PUBLIC_API_URL`  | Base URL of the LeWiSoft backend API (separate repo).                               | `http://localhost:8000`    |
 
 Set `NEXT_PUBLIC_SITE_URL` in your hosting provider for production builds. Otherwise canonical URLs and the sitemap fall back to `http://localhost:3000`.
 
 ## License
 
-[MIT](./LICENSE) © 2026 LewiSoft
+[MIT](./LICENSE) © 2026 LeWiSoft

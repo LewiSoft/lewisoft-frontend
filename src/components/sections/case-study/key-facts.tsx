@@ -12,7 +12,7 @@ function defaultFacts(project: Project): CaseStudy["facts"] {
     { label: "Client", value: project.name, detail: project.country },
     { label: "Industry", value: project.industry, detail: project.tagline },
     {
-      label: "LewiSoft Role",
+      label: "LeWiSoft Role",
       value: "Full-Stack Delivery",
       detail: "Lemuel & William",
     },
@@ -69,7 +69,7 @@ export function KeyFacts({
             </span>
             <div>
               <p className="font-heading text-sm font-semibold">
-                Built end-to-end by LewiSoft
+                Built end-to-end by LeWiSoft
               </p>
               <p className="text-sm text-muted-foreground">
                 Lemuel (design systems & frontend) • William (backend, data &

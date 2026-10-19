@@ -10,7 +10,7 @@
   --font-heading: var(--font-space-grotesk);
   --font-mono: var(--font-jetbrains-mono);
 
-  /* LewiSoft brand tokens: `bg-ink`, `text-ink-foreground`, etc. */
+  /* LeWiSoft brand tokens: `bg-ink`, `text-ink-foreground`, etc. */
   --color-ink: var(--ink);
   --color-ink-foreground: var(--ink-foreground);
   /* Accent hues from the Stitch palette: `text-brand-sky`, `from-brand-teal`, etc. */
@@ -59,7 +59,7 @@
 }
 
 /* ==========================================================================
-   🎨 LEWISOFT THEME COLOURS: from the Stitch "LewiSoft Studio" design system
+   🎨 LEWISOFT THEME COLOURS: from the Stitch "LeWiSoft Studio" design system
    --------------------------------------------------------------------------
    The Stitch design is dark-first (`.dark` below maps its palette 1:1):
      • Surface        #0f131d   → background

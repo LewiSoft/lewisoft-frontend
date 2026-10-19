@@ -26,7 +26,7 @@ export const studioFacts: Fact[] = [
 ];
 
 export const originStory = [
-  "LewiSoft emerged from frustration with the fragmented agency model. Working across startups and digital projects in London and Accra, we kept seeing the same pattern: agencies with high overheads charging premium rates, then handing the work to junior contractors or disconnected offshore teams.",
+  "LeWiSoft emerged from frustration with the fragmented agency model. Working across startups and digital projects in London and Accra, we kept seeing the same pattern: agencies with high overheads charging premium rates, then handing the work to junior contractors or disconnected offshore teams.",
   "The result was predictable. Talented designers created dazzling Figma mockups that fell apart in production, while separate backend teams shipped slow, fragile code that couldn’t adapt to changing requirements.",
   "We combined Lemuel’s depth in responsive typography, fluid micro-interactions and React/Next.js systems with William’s expertise in distributed systems, database design and cloud hosting. Design and infrastructure are no longer separate stages — they evolve together from day one.",
 ];

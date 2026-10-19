@@ -33,7 +33,7 @@ type TeamProps = {
 export function Team({
   eyebrow = "Meet the Founders",
   title = "Senior engineers. No project managers or account executives.",
-  aside = "When you commission LewiSoft, your project is planned, architected, designed, and coded exclusively by William and Lemuel.",
+  aside = "When you commission LeWiSoft, your project is planned, architected, designed, and coded exclusively by William and Lemuel.",
   detailed = false,
 }: TeamProps) {
   return (

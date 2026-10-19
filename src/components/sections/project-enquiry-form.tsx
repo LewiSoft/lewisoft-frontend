@@ -74,7 +74,7 @@ export function ProjectEnquiryForm() {
   });
 
   async function onSubmit(values: ProjectEnquiry) {
-    // TODO: send `values` to the enquiries endpoint on the LewiSoft API
+    // TODO: send `values` to the enquiries endpoint on the LeWiSoft API
     // (siteConfig.apiUrl) once it exists.
     void values;
     toast.success("Enquiry received!", {

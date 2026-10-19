@@ -16,7 +16,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Our Work",
   description:
-    "Websites and web platforms LewiSoft has designed and built for clients in Ghana, the UK and beyond.",
+    "Websites and web platforms LeWiSoft has designed and built for clients in Ghana, the UK and beyond.",
 };
 
 export default function WorkPage() {

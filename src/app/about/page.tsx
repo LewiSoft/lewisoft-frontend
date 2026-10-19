@@ -20,7 +20,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "LewiSoft is two senior engineers in Accra and London who design, build and ship complete websites and web platforms, with no middlemen.",
+    "LeWiSoft is two senior engineers in Accra and London who design, build and ship complete websites and web platforms, with no middlemen.",
 };
 
 export default function AboutPage() {
@@ -39,7 +39,7 @@ export default function AboutPage() {
             Complete digital ownership.
           </>
         }
-        description="We founded LewiSoft on a simple premise: modern web development should be done directly by the specialists writing the code, not passed through layers of agency bureaucracy."
+        description="We founded LeWiSoft on a simple premise: modern web development should be done directly by the specialists writing the code, not passed through layers of agency bureaucracy."
       />
       <FactStrip facts={studioFacts} label="Studio at a glance" />
 
